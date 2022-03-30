@@ -113,6 +113,10 @@ app.post('/create', validationMiddleware, csrfProtection, (req, res, next) => {
   }
 })
 
+app.get('/create-interesting', csrfProtection, (req, res) => {
+  res.render('create-interesting', {user: {}, errors: [], csrfToken: req.csrfToken()})
+})
+
 
 const users = [
   {

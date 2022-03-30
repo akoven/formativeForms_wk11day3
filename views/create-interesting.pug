@@ -1,0 +1,13 @@
+extends create.pug
+    label(for='age') Age:
+    input(type='number' name='age' value=user.age)
+    label(for='favoriteBeatle') Favorite Beatle:
+    select(name='favoriteBeatle')
+        option(value='') --Please choose an option--
+        option(value='John') John
+        option(value='Paul') Paul
+        option(value='Ringo') Ringo
+        option(value='George') George
+        option(value='Scooby-Doo') Scooby-Doo
+    label(for='iceCream') Likesn Ice Cream
+    input(type='checkbox' name='iceCream')
